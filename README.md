@@ -1,4 +1,4 @@
-# Note Taker ![Image of Badge](https://img.shields.io/badge/Note%20Taker-v%201.0.0-orange) (https://img.shields.io/badge/License-Northwestern%20University-brightgreen)
+# Note Taker ![Image of Badge](https://img.shields.io/badge/Note%20Taker-v%201.0.0-orange) !(https://img.shields.io/badge/License-Northwestern%20University-brightgreen)
 
 ## Description
 
