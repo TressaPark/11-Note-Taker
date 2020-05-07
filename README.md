@@ -1,4 +1,4 @@
-# Unit 11 Express Homework: Note Taker
+# Note Taker ![Image of Badge](https://img.shields.io/badge/Note%20Taker-v%201.0.0-orange) 
 
 ## Description
 
