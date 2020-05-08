@@ -51,5 +51,5 @@ There are no tests for this app.
 Copyright ©2020 Tressa Park
 
 ## Contact
-![Image of TressaPark](https://avatars3.githubusercontent.com/u/60233280?v=4)
-Please feel free to [email me](tressapark@gmail.com) if you have additional questions. Thank you.
+![Image of TressaPark](https://avatars3.githubusercontent.com/u/60233280?v=4)  
+   Please feel free to [email me](tressapark@gmail.com) if you have additional questions. Thank you.
