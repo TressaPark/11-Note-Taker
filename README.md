@@ -10,9 +10,11 @@
 <a name="usage"></a>
 * [Build Status](#build-status)
 <a name="build-status"></a>
+* [Tests](#tests)
+<a name="tests"></a>
 * [Credits](#credits)
 <a name="credits"></a>
-* [Go to License](#license)
+* [License](#license)
 <a name="license"></a>
 * [Contact](#contact)
 <a name="contact"></a>
@@ -23,7 +25,7 @@ Notetaker is an easy to navigate application that can be used to write, save, an
 
 ## Installation
 
-For users that need to keep track of a lot of information, it's easy to forget or be unable to recall something important. Being able to take persistent notes allows users to have written information available when needed.
+No special instructions, this is a fun and easy app. Simply click the link and add your notes.
 
 ## Usage
 
@@ -32,7 +34,11 @@ Please see Note Taker in action.
 
 ## Build Status
 
-Build status for this project is <input type="text" name="build" value="">complete
+Build status for this project is complete.
+
+## Tests
+
+There are no tests for this app.
 
 ## Credits
 
@@ -41,4 +47,9 @@ Build status for this project is <input type="text" name="build" value="">comple
 
 ## License
 ![Image of Badge](https://img.shields.io/badge/License-Northwestern%20University-brightgreen)
+
 Copyright ©2020 Tressa Park
+
+## Contact
+![Image of TressaPark](https://avatars3.githubusercontent.com/u/60233280?v=4)
+Please feel free to [email me](tressapark@gmail.com) if you have additional questions. Thank you.
