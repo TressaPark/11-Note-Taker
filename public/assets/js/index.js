@@ -36,7 +36,8 @@ var deleteNote = function(id) {
 var renderActiveNote = function() {
   $saveNoteBtn.hide();
 
-  if (activeNote.$noteTitle) {
+  // if (activeNote.$noteTitle) {
+    if (activeNote.title) {
     $noteTitle.attr("readonly", true);
     $noteText.attr("readonly", true);
     $noteTitle.val(activeNote.title);
@@ -58,7 +59,7 @@ var handleNoteSave = function() {
   console.log(newNote);
 
   saveNote(newNote).then(function(data) {
-    location.reload();
+    // location.reload();
     getAndRenderNotes();
     renderActiveNote();
   });
@@ -75,16 +76,15 @@ var handleNoteDelete = function(event) {
     console.log(note.id)
   
 
-  if (activeNote.id === note.id) {
+  if (activeNote.title === note.id) {
     activeNote = {};
   }
 
   deleteNote(note.id).then(function() {
     
     getAndRenderNotes();
-    
     renderActiveNote();
-    location.reload();
+    // location.reload();
   });
 };
 

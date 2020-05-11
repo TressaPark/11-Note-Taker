@@ -20,8 +20,6 @@ module.exports = function(app) {
   // Should receive a new note to save on the request body, add it to the `db.json` file, 
   // and then return the new note to the client.
   app.post("/api/notes", function(req, res) {
-    //in the db.json keeping track of the ID by the length of th array
-    //let noteId = dbjson.length;
     // console.log("inside post request");
     let newNote = {
       id: dbjson.length,
@@ -69,6 +67,7 @@ module.exports = function(app) {
   // Should receive a query parameter containing the id of a note to delete.
   app.delete("/api/notes/:id", function (req, res) {
     let noteId = req.params.id
+    console.log(noteId)
     // fs.readFile("./db/db.json", "utf8", (err, data) => {
       fs.readFile("./db/db.json", "utf8", (err, data) => {  
       if (err) throw error
@@ -80,7 +79,7 @@ module.exports = function(app) {
       
     fs.writeFile("./db/db.json", JSON.stringify(updatedNotes, null, 2), err => {
         if (err) throw error
-
+        return res.json(updatedNotes)
         //  res.redirect("/")
         console.log("Note Deleted")  
        
