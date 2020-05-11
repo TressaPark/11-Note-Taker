@@ -47,14 +47,14 @@ module.exports = function(app) {
     // // although it can also be used with simple data types like strings and numbers.
     // fs.writeFile("../db/db.json", JSON.stringify(dbjson, null, 2), function(err) {
       
-    fs.writeFile("../db/db.json", JSON.stringify(dbjson, null, 2), function(err) {
+    fs.writeFile("./db/db.json", JSON.stringify(dbjson, null, 2), function(err) {
 
       if (err) {
         return console.log(err);
       }
     
       console.log("Success!");
-    
+    res.send(dbjson)
     });
     
     
@@ -69,16 +69,21 @@ module.exports = function(app) {
   // Should receive a query parameter containing the id of a note to delete.
   app.delete("/api/notes/:id", function (req, res) {
     let noteId = req.params.id
-    // fs.readFile("../db/db.json", "utf8", (err, data) => {
-      fs.readFile("../db/db.json", "utf8", (err, data) => {  
+    // fs.readFile("./db/db.json", "utf8", (err, data) => {
+      fs.readFile("./db/db.json", "utf8", (err, data) => {  
       if (err) throw error
       const allNotes = JSON.parse(data)
+      console.log("noteID: "+noteId)
+      console.log("data "+ allNotes)
       const updatedNotes = allNotes.filter(note => note.id!=noteId)
+      console.log(updatedNotes)
       
-    fs.writeFile("../db/db.json", JSON.stringify(updatedNotes, null, 2), err => {
+    fs.writeFile("./db/db.json", JSON.stringify(updatedNotes, null, 2), err => {
         if (err) throw error
-        res.redirect("/")
+
+        //  res.redirect("/")
         console.log("Note Deleted")  
+       
     });
   });  
   });
