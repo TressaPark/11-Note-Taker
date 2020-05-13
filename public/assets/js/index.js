@@ -4,7 +4,7 @@ var $saveNoteBtn = $(".save-note");
 var $newNoteBtn = $(".new-note");
 var $noteList = $(".list-container .list-group");
 
-// activeNote is used to keep track of the note in the textarea
+// activeNote is used to keep track of the note in the text area
 var activeNote = {};
 
 // A function for getting all notes from the db
@@ -37,7 +37,7 @@ var renderActiveNote = function() {
   $saveNoteBtn.hide();
 
   // if (activeNote.$noteTitle) {
-    if (activeNote.title) {
+    if (activeNote.id) {
     $noteTitle.attr("readonly", true);
     $noteText.attr("readonly", true);
     $noteTitle.val(activeNote.title);
@@ -76,12 +76,11 @@ var handleNoteDelete = function(event) {
     console.log(note.id)
   
 
-  if (activeNote.title === note.id) {
+  if (activeNote.id === note.id) {
     activeNote = {};
   }
 
   deleteNote(note.id).then(function() {
-    
     getAndRenderNotes();
     renderActiveNote();
     // location.reload();
