@@ -27,10 +27,6 @@ Notetaker is an easy to navigate application that can be used to write, save, an
 
 No special instructions, this is a fun and easy app. Simply click the link and add your notes.
 
-## Usage
-
-Please see Note Taker in action.
-<!-- still-brook-31315.herokuapp.com/notes -->
 
 ## Build Status
 
