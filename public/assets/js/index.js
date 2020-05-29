@@ -56,7 +56,6 @@ var handleNoteSave = function() {
     title: $noteTitle.val(),
     text: $noteText.val()
   };
-  console.log(newNote);
 
   saveNote(newNote).then(function(data) {
     // location.reload();
@@ -73,14 +72,12 @@ var handleNoteDelete = function(event) {
   var note = $(this)
     .parent(".list-group-item")
     .data();
-    console.log(note.id)
-  
 
-  if (activeNote.id === note.id) {
+  if (activeNote.title === note.title) {
     activeNote = {};
   }
 
-  deleteNote(note.id).then(function() {
+  deleteNote(note.title).then(function() {
     getAndRenderNotes();
     renderActiveNote();
     // location.reload();
