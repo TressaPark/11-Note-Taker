@@ -1,7 +1,7 @@
 // const does NOT define a constant value. It defines a constant reference to a value.
 // Because of this, we cannot change constant primitive values, but we can change the properties of constant objects.
 // const dbjson = require ("../db/db.json");
-const dbjson = require("../db/db.json");
+// const dbjson = require("../db/db.json");
 const fs = require('fs');
 
 // A Version 4 UUID is a universally unique identifier that is generated using random numbers.
@@ -13,7 +13,12 @@ module.exports = function (app) {
 
   // Should read the `db.json` file and return all saved notes as JSON.
   app.get("/api/notes", function (req, res) {
-    res.send(dbjson)
+    fs.readFile("../db/db.json", "utf8", (err, data) => {
+      if (err) throw error
+      const allNotes = JSON.parse(data)
+      res.json(allNotes);
+    })
+    // res.json(dbjson)
   });
 
   // Should receive a new note to save on the request body, add it to the `db.json` file, 
