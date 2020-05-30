@@ -11,17 +11,18 @@ var express = require("express");
 // ==============================================================================
 
 // Tells node that we are creating an "express" server
-var app = express();
+const express = require("express");
 
 // Sets an initial port. We"ll use this later in our listener
-var PORT = process.env.PORT || 8080;
-
-//this is the starting directory so that the CSS can be accessed
-app.use(express.static("public"));
+const app = express();
+const PORT = 8080;
 
 // Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+
+//this is the starting directory so that the CSS can be accessed
+app.use(express.static("public"));
 
 // ================================================================================
 // ROUTER
@@ -29,8 +30,8 @@ app.use(express.json());
 // These routes give our server a "map" of how to respond when users visit or request data from various URLs.
 // ================================================================================
 
-require("./routes/apiRoutes")(app);
-require("./routes/htmlRoutes")(app);
+require("./routes/apiRoutes.js")(app);
+require("./routes/htmlRoutes.js")(app);
 
 // =============================================================================
 // LISTENER

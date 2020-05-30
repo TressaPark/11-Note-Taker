@@ -39,13 +39,14 @@ There are no tests for this app.
 ## Credits
 
 * [Tressa Park](https://github.com/TressaPark), Northwestern University Full-Stack Coding Bootcamp
+* TA Paul ???, Jill Westerhelhaus and I worked in office hours to get this app up and running. Thanks guys!
 * Trilogy Education Services
 
 ## License
 ![Image of Badge](https://img.shields.io/badge/License-Northwestern%20University-brightgreen)
 
-Copyright ©2020 Tressa Park
-
 ## Contact
 ![Image of TressaPark](https://avatars3.githubusercontent.com/u/60233280?v=4)  
    Please feel free to [email me](mailto:tressapark@gmail.com) if you have additional questions. Thank you.
+
+   Copyright ©2020 Tressa Park
