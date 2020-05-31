@@ -27,7 +27,6 @@ Notetaker is an easy to navigate application that can be used to write, save, an
 
 No special instructions, this is a fun and easy app. Simply click the link and add your notes.
 
-
 ## Build Status
 
 Build status for this project is complete.
@@ -39,8 +38,7 @@ There are no tests for this app.
 ## Credits
 
 * [Tressa Park](https://github.com/TressaPark), Northwestern University Full-Stack Coding Bootcamp
-* TA Paul ???, Jill Westerhelhaus and I worked in office hours to get this app up and running. Thanks guys!
-* Trilogy Education Services
+* TA Paul Cwik, Jill Westerhelhaus and I worked in office hours to get this app up and running. Thanks guys!
 
 ## License
 ![Image of Badge](https://img.shields.io/badge/License-Northwestern%20University-brightgreen)
